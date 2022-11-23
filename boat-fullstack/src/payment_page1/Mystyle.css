@@ -1,0 +1,42 @@
+.boxes{
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+    position: fixed;
+    
+}
+.parent{
+    position: relative;
+    z-index: 1;
+}
+.Input_boxes{
+    display: flex;
+    gap:"10px";
+  
+    
+}
+Input{
+    margin-top: "29px";
+    height: "50px";
+}
+.Input_boxes_baby{
+    width: "43%"
+}
+.home_boxes{
+    display: flex;
+    gap:2px;
+    width:"35%";
+    text-align: center;
+    border: 1px solid black;
+    padding: 6px;
+    border-radius: 4px;
+}
+.flex_boxes{
+    margin-top: -10px;
+    display: flex;
+    gap:10px;
+    margin-bottom:25px;
+    margin-left: 30px;
+
+    
+}

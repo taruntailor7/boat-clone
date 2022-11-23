@@ -1,0 +1,79 @@
+.App{
+    font-family: 'Montserrat';
+    font-weight: 'bolder';
+}
+
+/* For Underline */
+.hover-underline-animation,.hover-underline-banner {
+    display: inline-block;
+    position: relative;
+    color: black;
+  }
+  
+  .hover-underline-animation:after,.hover-underline-banner:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color:black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after,.hover-underline-banner:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .hover-underline-banner:after{
+    background-color:red;
+    height: 3px;
+  }
+
+
+
+
+/* For Carousel Arrows */
+.owl-theme{
+  /* border:"2px solid blue"; */
+  margin-top:20px;
+}
+.owl-carousel{
+  position: relative;
+}
+.owl-nav{
+  height: 45px;
+  background:#ebebeb;
+}
+.prev{
+  font-size: 90px;
+  position: absolute;
+  left:0;
+  top:230px;
+  color:crimson;
+  display: none;
+}
+.next{
+  font-size: 90px;
+  position: absolute;
+  top:230px;
+  right:0;
+  color:crimson;
+  display: none;
+}
+.prev:hover {
+  color:red;
+}
+.next:hover{
+  color:red;
+}
+.owl-dots{
+  position: absolute;
+  margin-top: -32px;
+  margin-left: 60px;
+  /* color: #9c9c9c; */
+}
+
