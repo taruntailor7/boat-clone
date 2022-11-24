@@ -1,6 +1,10 @@
 import express from "express";
 import connection from "./config/db.js";
+// <<<<<<< HEAD
+import { getCatchMeAll } from "./controllers/catchMeAll.controller.js";
+// =======
 import { getAavante } from "./controllers/aavantes.controller.js";
+// >>>>>>> 46def589da26a13da3dcdb86c30b4f1ecdb20780
 import { getCategories } from "./controllers/categories.controller.js";
 import { getEditions } from "./controllers/editions.controller.js";
 import { getTRebels } from "./controllers/tRebels.controller.js";
@@ -24,7 +28,12 @@ app.get("/loggedInUser", getLoggedInUser);
 
 app.get("/shopByCategory", getCategories);
 
+// <<<<<<< HEAD
+app.get( "/catchMeAll",  getCatchMeAll )
+
+// =======
 app.get("/limitedEdition", getEditions);
+// >>>>>>> 46def589da26a13da3dcdb86c30b4f1ecdb20780
 
 app.get("/tRebel", getTRebels);
 
