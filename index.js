@@ -4,11 +4,6 @@ import { getAavante } from "./controllers/aavantes.controller.js";
 import { getCategories } from "./controllers/categories.controller.js";
 import { getEditions } from "./controllers/editions.controller.js";
 import { getTRebels } from "./controllers/tRebels.controller.js";
-import {
-  register,
-  login,
-  getLoggedInUser,
-} from "./controllers/user.controller.js";
 import { getMainProducts } from "./controllers/mainproducts.controller.js";
 import { register, login, getLoggedInUser } from "./controllers/user.controller.js";
 
