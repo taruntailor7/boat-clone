@@ -6,6 +6,7 @@ dotenv.config();
 const password = process.env.PASSWORD;
 // console.log(username, password);
 
+
 const connection = async ()=>{
     await mongoose.connect(`mongodb+srv://tarun7:${password}@imdb.46rj40h.mongodb.net/boat?retryWrites=true&w=majority`)
     console.log("Connection established")
