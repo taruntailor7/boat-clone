@@ -24,7 +24,7 @@ app.get("/loggedInUser", getLoggedInUser);
 app.listen(3050, () => {
   try {
     connection();
-    console.log(`listening on port http://localhost:3050/`);
+    console.log("listening on port 3050");
   } catch (error) {
     console.log(error);
   }
