@@ -1,5 +1,6 @@
 import express from "express"
 import connection from "./config/db.js";
+import { getCatchMeAll } from "./controllers/catchMeAll.controller.js";
 import { getCategories } from "./controllers/categories.controller.js";
 import { register, login, getLoggedInUser } from "./controllers/user.controller.js";
 
@@ -19,6 +20,8 @@ app.post("/login",login)
 app.get("/loggedInUser",getLoggedInUser)
 
 app.get("/shopByCategory",getCategories)
+
+app.get( "/catchMeAll",  getCatchMeAll )
 
 
 app.listen(3050,()=>{
