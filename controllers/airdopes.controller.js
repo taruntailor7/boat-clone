@@ -1,4 +1,4 @@
-import airdopesTrueWirelessModel from "../models/airdopestruewireless.model";
+import airdopesTrueWirelessModel from "../models/airdopestruewireless.model.js";
 
 
 export const getAirdopes = async (req,res)=>{

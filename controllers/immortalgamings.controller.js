@@ -1,4 +1,4 @@
-import immortalGamingsModel from "../models/immortalgamings.model";
+import immortalGamingsModel from "../models/immortalgamings.model.js";
 
 export const getImmortalgamings = async (req,res)=>{
     try{

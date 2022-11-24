@@ -1,4 +1,4 @@
-import smartWatchesModel from "../models/smartwatches.model";
+import smartWatchesModel from "../models/smartwatches.model.js";
 
 export const getSmartWatches = async (req,res)=>{
     try{

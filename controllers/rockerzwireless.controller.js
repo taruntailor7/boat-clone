@@ -1,4 +1,4 @@
-import rockerzWirelessModel from "../models/rockerzwireless.model";
+import rockerzWirelessModel from "../models/rockerzwireless.model.js";
 
 export const getRockerzWireless = async (req,res)=>{
     try{
