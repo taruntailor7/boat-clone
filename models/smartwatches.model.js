@@ -13,7 +13,7 @@ const categorySchema = new mongoose.Schema({
     // }
 })
 
-const mainProductsModel = mongoose.model('mainproducts', categorySchema)
+const smartWatchesModel = mongoose.model('smartwatches', categorySchema)
 
 
-export default mainProductsModel
+export default smartWatchesModel

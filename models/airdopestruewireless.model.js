@@ -13,7 +13,7 @@ const categorySchema = new mongoose.Schema({
     // }
 })
 
-const misFitTrimmersModel = mongoose.model('misfittrimmers', categorySchema)
+const airdopesTrueWirelessModel = mongoose.model('airdopestruewirelesses', categorySchema)
 
 
-export default misFitTrimmersModel
+export default airdopesTrueWirelessModel

@@ -13,7 +13,7 @@ const categorySchema = new mongoose.Schema({
     // }
 })
 
-const limitedEditionsModel = mongoose.model('limitededitions', categorySchema)
+const rockerzWirelessModel = mongoose.model('rockerzwirelesses', categorySchema)
 
 
-export default limitedEditionsModel
+export default rockerzWirelessModel

@@ -1,8 +1,12 @@
 import express from "express";
 import connection from "./config/db.js";
 import { getAavante } from "./controllers/aavantes.controller.js";
+import { getAirdopes } from "./controllers/airdopes.controller.js";
 import { getCategories } from "./controllers/categories.controller.js";
 import { getEditions } from "./controllers/editions.controller.js";
+import { getImmortalgamings } from "./controllers/immortalgamings.controller.js";
+import { getRockerzWireless } from "./controllers/rockerzwireless.controller.js";
+import { getSmartWatches } from "./controllers/smartwatches.controller.js";
 import { getTRebels } from "./controllers/tRebels.controller.js";
 import {
   register,
@@ -32,6 +36,16 @@ app.get("/limitedEdition", getEditions);
 app.get("/tRebel", getTRebels);
 
 app.get("/aavante", getAavante);
+
+app.get("/smatwatches", getSmartWatches);
+
+app.get("/airdopestruewireless", getAirdopes);
+
+app.get("/immortalgamings", getImmortalgamings);
+
+app.get("/rockerzwireless", getRockerzWireless);
+
+
 
 app.listen(3050, () => {
   try {
