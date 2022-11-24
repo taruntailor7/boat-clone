@@ -13,7 +13,7 @@ const categorySchema = new mongoose.Schema({
     // }
 })
 
-const categoryModel = mongoose.model('shopbycategories', categorySchema)
+const limitedEditionsModel = mongoose.model('limitededitions', categorySchema)
 
 
-export default categoryModel
+export default limitedEditionsModel
