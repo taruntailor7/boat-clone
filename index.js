@@ -17,6 +17,7 @@ import { getSmartWatches } from "./controllers/smartwatches.controller.js";
 import { getTRebels } from "./controllers/tRebels.controller.js";
 import { getMainProducts } from "./controllers/mainproducts.controller.js";
 import { register, login, getLoggedInUser } from "./controllers/user.controller.js";
+import { getbestOfBoat } from "./controllers/bestOfBoat.controller.js";
 
 const app = express();
 app.use(express.json());
@@ -34,6 +35,8 @@ app.post("/login", login);
 app.get("/loggedInUser", getLoggedInUser);
 
 app.get("/shopByCategory", getCategories);
+
+app.get( "/bestOfBoat",  getbestOfBoat )
 
 app.get( "/catchMeAll",  getCatchMeAll )
 
