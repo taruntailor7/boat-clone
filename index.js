@@ -18,7 +18,6 @@ app.post("/login",login)
 app.get("/loggedInUser",getLoggedInUser)
 
 
-
 app.listen(3050,()=>{
     try {
         connection();
