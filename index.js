@@ -13,6 +13,8 @@ import {
   login,
   getLoggedInUser,
 } from "./controllers/user.controller.js";
+import { getMainProducts } from "./controllers/mainproducts.controller.js";
+import { register, login, getLoggedInUser } from "./controllers/user.controller.js";
 
 const app = express();
 app.use(express.json());
@@ -41,6 +43,9 @@ app.get("/limitedEdition", getEditions);
 app.get("/tRebel", getTRebels);
 
 app.get("/aavante", getAavante);
+
+app.get("/mainProducts",getMainProducts)
+
 
 app.listen(3050, () => {
   try {
