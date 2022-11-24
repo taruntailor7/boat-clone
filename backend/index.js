@@ -2,6 +2,7 @@ import express from "express"
 import connection from "./config/db.js";
 import { register, login, getLoggedInUser } from "./controllers/user.controller.js";
 
+
 const app = express();
 app.use(express.json());
 
