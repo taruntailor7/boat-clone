@@ -1,6 +1,7 @@
 import express from "express"
 import connection from "./config/db.js";
 import { getCategories } from "./controllers/categories.controller.js";
+import { getMainProducts } from "./controllers/mainproducts.controller.js";
 import { register, login, getLoggedInUser } from "./controllers/user.controller.js";
 
 const app = express();
@@ -19,6 +20,8 @@ app.post("/login",login)
 app.get("/loggedInUser",getLoggedInUser)
 
 app.get("/shopByCategory",getCategories)
+
+app.get("/mainProducts",getMainProducts)
 
 
 app.listen(3050,()=>{
