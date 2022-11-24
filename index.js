@@ -18,6 +18,7 @@ import { getTRebels } from "./controllers/tRebels.controller.js";
 import { getMainProducts } from "./controllers/mainproducts.controller.js";
 import { register, login, getLoggedInUser } from "./controllers/user.controller.js";
 import { getbestOfBoat } from "./controllers/bestOfBoat.controller.js";
+import { getmobileAccessories } from "./controllers/mobileAccessories.controller.js";
 
 const app = express();
 app.use(express.json());
@@ -39,6 +40,8 @@ app.get("/shopByCategory", getCategories);
 app.get( "/bestOfBoat",  getbestOfBoat )
 
 app.get( "/catchMeAll",  getCatchMeAll )
+
+app.get( "/mobileAccessories",  getmobileAccessories )
 
 app.get("/limitedEdition", getEditions);
 
