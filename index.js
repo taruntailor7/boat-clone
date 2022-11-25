@@ -10,7 +10,7 @@ import { getRockerzWireless } from "./controllers/rockerzwireless.controller.js"
 import { getSmartWatches } from "./controllers/smartwatches.controller.js";
 import { getTRebels } from "./controllers/tRebels.controller.js";
 import { getMainProducts } from "./controllers/mainproducts.controller.js";
-import { register, login, getLoggedInUser } from "./controllers/user.controller.js";
+import {register,login,getLoggedInUser,} from "./controllers/user.controller.js";
 import { getbestOfBoat } from "./controllers/bestOfBoat.controller.js";
 import { getmobileAccessories } from "./controllers/mobileAccessories.controller.js";
 import cartRouter from "./routes/cart.routes.js";
@@ -26,7 +26,6 @@ app.get("/", (req, res) => {
 
 app.use('/cart', cartRouter);
 
-
 app.post("/register", register);
 
 app.post("/login", login);
@@ -35,11 +34,11 @@ app.get("/loggedInUser", getLoggedInUser);
 
 app.get("/shopByCategory", getCategories);
 
-app.get( "/bestOfBoat",  getbestOfBoat )
+app.get("/bestOfBoat", getbestOfBoat);
 
-app.get( "/catchMeAll",  getCatchMeAll )
+app.get("/catchMeAll", getCatchMeAll);
 
-app.get( "/mobileAccessories",  getmobileAccessories )
+app.get("/mobileAccessories", getmobileAccessories);
 
 app.get("/limitedEdition", getEditions);
 
@@ -55,9 +54,8 @@ app.get("/immortalgamings", getImmortalgamings);
 
 app.get("/rockerzwireless", getRockerzWireless);
 
-app.get("/mainProducts",getMainProducts);
-
-
+app.get("/mainProducts", getMainProducts);
+;
 
 app.listen(3050, () => {
   try {
