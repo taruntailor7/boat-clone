@@ -13,6 +13,7 @@ import { getMainProducts } from "./controllers/mainproducts.controller.js";
 import { register, login, getLoggedInUser } from "./controllers/user.controller.js";
 import { getbestOfBoat } from "./controllers/bestOfBoat.controller.js";
 import { getmobileAccessories } from "./controllers/mobileAccessories.controller.js";
+import cartRouter from "./routes/cart.routes.js";
 
 const app = express();
 app.use(express.json());
@@ -22,6 +23,9 @@ app.get("/", (req, res) => {
     message: "Boat Clone",
   });
 });
+
+app.use('/cart', cartRouter);
+
 
 app.post("/register", register);
 
@@ -51,7 +55,8 @@ app.get("/immortalgamings", getImmortalgamings);
 
 app.get("/rockerzwireless", getRockerzWireless);
 
-app.get("/mainProducts",getMainProducts)
+app.get("/mainProducts",getMainProducts);
+
 
 
 app.listen(3050, () => {
