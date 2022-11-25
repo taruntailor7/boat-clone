@@ -43,7 +43,7 @@ app.get("/tRebel", getTRebels);
 
 app.get("/aavante", getAavante);
 
-app.get("/smatwatches", getSmartWatches);
+app.get("/smartwatches", getSmartWatches);
 
 app.get("/airdopestruewireless", getAirdopes);
 
