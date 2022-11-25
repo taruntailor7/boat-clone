@@ -47,9 +47,9 @@ app.get("/bestOfBoat", getbestOfBoat);
 
 app.get("/catchMeAll", getCatchMeAll);
 
-app.get("/mobileAccessories", getmobileAccessories);
-
 app.get("/limitedEdition", getEditions);
+
+app.get("/mobileAccessories", getmobileAccessories);
 
 app.get("/tRebel", getTRebels);
 
