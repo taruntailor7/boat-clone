@@ -13,6 +13,7 @@ import { getMainProducts } from "./controllers/mainproducts.controller.js";
 import { register, login, getLoggedInUser } from "./controllers/user.controller.js";
 import { getbestOfBoat } from "./controllers/bestOfBoat.controller.js";
 import { getmobileAccessories } from "./controllers/mobileAccessories.controller.js";
+import getUser from "./controllers/oAuth.controller.js";
 
 const app = express();
 app.use(express.json());
@@ -22,6 +23,8 @@ app.get("/", (req, res) => {
     message: "Boat Clone",
   });
 });
+
+app.get("/githubOauthAccess", getUser);
 
 app.post("/register", register);
 
@@ -52,6 +55,10 @@ app.get("/immortalgamings", getImmortalgamings);
 app.get("/rockerzwireless", getRockerzWireless);
 
 app.get("/mainProducts",getMainProducts)
+
+
+
+
 
 
 app.listen(3050, () => {
