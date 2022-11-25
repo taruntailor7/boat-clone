@@ -20,6 +20,7 @@ import { getmobileAccessories } from "./controllers/mobileAccessories.controller
 import cartRouter from "./routes/cart.routes.js";
 import { getMisfitTrimmers } from "./controllers/misfitTrimmers.controller.js";
 import { getStoneSpeakers } from "./controllers/stoneSpeakers.controller.js";
+import { getAllProducts } from "./controllers/allProducts.controller.js";
 
 const app = express();
 app.use(express.json());
@@ -37,6 +38,8 @@ app.post("/register", register);
 app.post("/login", login);
 
 app.get("/loggedInUser", getLoggedInUser);
+
+app.get("/allproducts", getAllProducts);
 
 app.get("/shopByCategory", getCategories);
 
