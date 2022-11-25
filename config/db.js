@@ -8,7 +8,10 @@ const password = process.env.PASSWORD;
 
 
 const connection = async ()=>{
-    await mongoose.connect(`mongodb+srv://tarun7:${password}@imdb.46rj40h.mongodb.net/boat?retryWrites=true&w=majority`)
+    await mongoose.connect(`mongodb+srv://tarun7:${password}@imdb.46rj40h.mongodb.net/boat?retryWrites=true&w=majority`,{
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    })
     console.log("Connection established")
 }
 
