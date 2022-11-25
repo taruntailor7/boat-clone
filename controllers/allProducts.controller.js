@@ -5,9 +5,9 @@ export const getAllProducts = async (req, res) => {
     let allData = await allProductsModel.find();
     return res.status(200).send({
       status: "success",
-      data: allData,
+      data: allData
     });
-    ret;
+    // ret;
   } catch (error) {
     return res.status(400).send({
       status: "error",
