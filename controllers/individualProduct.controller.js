@@ -1,12 +1,16 @@
 import mainProductsModel from "../models/mainproducts.model.js"
 
-export const getMainProducts = async (req,res)=>{
+export const getIndividualProduct = async (req,res)=>{
     try{
-        let mainProducts = await mainProductsModel.find();
-        // console.log(req.params.id)
+
+
+        let {id} = req.params;
+
+        let mainProduct = await mainProductsModel.find({id: id});
+        console.log(req.params.id);
         return res.send({
             status:"success",
-            data : mainProducts
+            data : mainProduct
         })
     }
     catch(err){

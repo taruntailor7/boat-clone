@@ -21,6 +21,7 @@ import cartRouter from "./routes/cart.routes.js";
 import { getMisfitTrimmers } from "./controllers/misfitTrimmers.controller.js";
 import { getStoneSpeakers } from "./controllers/stoneSpeakers.controller.js";
 import { getAllProducts } from "./controllers/allProducts.controller.js";
+import { getIndividualProduct } from "./controllers/individualProduct.controller.js";
 
 const app = express();
 app.use(express.json());
@@ -64,6 +65,8 @@ app.get("/immortalgamings", getImmortalgamings);
 app.get("/rockerzwireless", getRockerzWireless);
 
 app.get("/mainProducts", getMainProducts);
+
+app.get("/mainProducts/:id", getIndividualProduct);
 
 app.get("/stonespeakers", getStoneSpeakers);
 
