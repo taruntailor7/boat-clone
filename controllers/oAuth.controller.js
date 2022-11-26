@@ -39,7 +39,6 @@ async function getUser(req,res) {
                 'Authorization': `Bearer ${token}`
             }
         });
-        console.log(response,"this is response")
         console.log(response.data,"this is response data")
         
         res.send({
