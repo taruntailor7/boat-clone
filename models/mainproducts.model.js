@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const mainProductsSchema = new mongoose.Schema({
-    // name:String,
+    id:Number
     // email:{
     //     type:String,
     //     required:true
