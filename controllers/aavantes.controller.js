@@ -6,7 +6,7 @@ export const getAavante = async (req, res) => {
       page = 1,
       _sort = "_id",
       pageSize = 12,
-      _order = "asc",
+      _order = "",
       price_gte = 0,
       price_lte = Infinity,
     } = req.query;
