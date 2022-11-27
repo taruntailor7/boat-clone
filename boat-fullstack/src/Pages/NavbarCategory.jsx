@@ -6,7 +6,7 @@ export const NavbarCategory = () => {
     const [categoryData, setCategoryData] = useState([]);
 
     const getData = ()=>{
-        fetch(`https://boat-lifestyle.herokuapp.com/shopByCategory`)
+        fetch(`https://boat-lifestyle.onrender.com/shopByCategory`)
         .then(res=>res.json())
         .then(res=>setCategoryData(res))
         .catch(err=>console.log(err))

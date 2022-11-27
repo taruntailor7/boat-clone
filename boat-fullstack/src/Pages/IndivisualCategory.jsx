@@ -48,37 +48,37 @@ export const IndivisualCategory = () => {
 
     let fetchUrl = "https://boat-lifestyle.herokuapp.com/shopByCategory"
     if(url==="true-wireless-earbuds"){
-        fetchUrl = "https://boat-lifestyle.herokuapp.com/airdopesTrueWireless"
+        fetchUrl = "https://boat-lifestyle.onrender.com/airdopesTrueWireless"
     }
     else if(url==="bluetooth-wireless-headphones"){
-        fetchUrl = "https://boat-lifestyle.herokuapp.com/rockerzWireless"
+        fetchUrl = "https://boat-lifestyle.onrender.com/rockerzWireless"
     }
     else if(url==="smart-watches"){
-        fetchUrl = "https://boat-lifestyle.herokuapp.com/smartWatches"
+        fetchUrl = "https://boat-lifestyle.onrender.com/smartWatches"
     }
     else if(url==="wired-headphones"){
-        fetchUrl = "https://boat-lifestyle.herokuapp.com/rockerzWireless"
+        fetchUrl = "https://boat-lifestyle.onrender.com/rockerzWireless"
     }
     else if(url==="bluetooth-speakers"){
-        fetchUrl = "https://boat-lifestyle.herokuapp.com/stoneSpeakers"
+        fetchUrl = "https://boat-lifestyle.onrender.com/stoneSpeakers"
     }
     else if(url==="home-audio"){
-        fetchUrl = "https://boat-lifestyle.herokuapp.com/aavante"
+        fetchUrl = "https://boat-lifestyle.onrender.com/aavante"
     }
     else if(url==="mobile-accessories"){
-        fetchUrl = "https://boat-lifestyle.herokuapp.com/mobileAccessories"
+        fetchUrl = "https://boat-lifestyle.onrender.com/mobileAccessories"
     }
     else if(url==="trebel-for-women"){
-        fetchUrl = "https://boat-lifestyle.herokuapp.com/tRebel"
+        fetchUrl = "https://boat-lifestyle.onrender.com/tRebel"
     }
     else if(url==="limited-edition"){
-        fetchUrl = "https://boat-lifestyle.herokuapp.com/limitedEdition"
+        fetchUrl = "https://boat-lifestyle.onrender.com/limitedEdition"
     }
     else if(url==="misfit-by-boat"){
-        fetchUrl = "https://boat-lifestyle.herokuapp.com/misfitTrimmers"
+        fetchUrl = "https://boat-lifestyle.onrender.com/misfitTrimmers"
     }
     else if(url==="immortal-gaming"){
-        fetchUrl = "https://boat-lifestyle.herokuapp.com/immortalGaming"
+        fetchUrl = "https://boat-lifestyle.onrender.com/immortalGaming"
     }
     // else if(url===""){
     //     fetchUrl = "http://localhost:3001/shopByCategory"
