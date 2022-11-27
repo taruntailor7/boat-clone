@@ -22,9 +22,12 @@ import { getMisfitTrimmers } from "./controllers/misfitTrimmers.controller.js";
 import { getStoneSpeakers } from "./controllers/stoneSpeakers.controller.js";
 import { getAllProducts } from "./controllers/allProducts.controller.js";
 import { getIndividualProduct } from "./controllers/individualProduct.controller.js";
+import cors from 'cors'
 
 const app = express();
 app.use(express.json());
+
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send({
