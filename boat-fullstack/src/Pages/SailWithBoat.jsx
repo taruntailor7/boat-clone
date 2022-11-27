@@ -26,7 +26,7 @@ export const SailWithBoat = () => {
   const getData = ()=>{
     dispatch(get_loading());
     console.log(loading,"loading inside");
-    fetch(`https://boat-lifestyle.herokuapp.com/allProducts`)
+    fetch(`https://boat-lifestyle.onrender.com/allProducts`)
     .then((res)=>res.json())
     .then((res)=>{
       setSailWithBoat(res)
