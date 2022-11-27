@@ -2,7 +2,23 @@ import tRebelModel from "../models/tRebel.model.js";
 
 export const getTRebels = async (req, res) => {
   try {
-    let tRebelData = await tRebelModel.find();
+    let {
+      page = 1,
+      _sort = "_id",
+      pageSize = 12,
+      _order = "asc",
+      price_gte = 0,
+      price_lte = Infinity,
+    } = req.query;
+
+    const filters = {
+      $and: [{ price: { $gt: price_gte } }, { price: { $lt: price_lte } }],
+    };
+    let tRebelData = await tRebelModel
+      .find(filters)
+      .sort({ [_sort]: _order === "asc" ? 1 : -1 })
+      .limit(pageSize)
+      .skip(pageSize * (page - 1));
     return res.status(200).send({
       status: "success",
       data: tRebelData,

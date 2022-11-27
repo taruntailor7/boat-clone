@@ -4,19 +4,19 @@ export const getAavante = async (req, res) => {
   try {
     let {
       page = 1,
-      sortBy = "_id",
-      pageSize = 10,
-      order = "asc",
-      priceStart = 0,
-      priceEnd = Infinity,
+      _sort = "_id",
+      pageSize = 12,
+      _order = "",
+      price_gte = 0,
+      price_lte = Infinity,
     } = req.query;
 
     const filters = {
-      $and: [{ price: { $gt: priceStart } }, { price: { $lt: priceEnd } }],
+      $and: [{ price: { $gt: price_gte } }, { price: { $lt: price_lte } }],
     };
     let aavanteData = await aavanteModel
       .find(filters)
-      .sort({ [sortBy]: order === "asc" ? 1 : -1 })
+      .sort({ [_sort]: _order === "asc" ? 1 : -1 })
       .limit(pageSize)
       .skip(pageSize * (page - 1));
     return res.status(200).send({
