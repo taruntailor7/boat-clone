@@ -13,7 +13,7 @@ const catchMeAllSchema = new mongoose.Schema({
   isSuperSaver: Boolean,
   image: Array,
   color: Array,
-});
+},{timestamp: true, versionKey: false});
 
 const catchModel = mongoose.model("catchmealls", catchMeAllSchema);
 

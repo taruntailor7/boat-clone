@@ -13,7 +13,7 @@ const limitedEditionSchema = new mongoose.Schema({
   isSuperSaver: Boolean,
   image: Array,
   color: Array,
-});
+},{timestamp: true, versionKey: false});
 
 const editionModel = mongoose.model("limitededitions", limitedEditionSchema);
 export default editionModel;

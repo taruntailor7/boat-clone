@@ -13,7 +13,7 @@ const aavanteSchema = new mongoose.Schema({
   isSuperSaver: Boolean,
   image: Array,
   color: Array,
-});
+},{timestamp: true, versionKey: false});
 
 const aavanteModel = mongoose.model("aavantes", aavanteSchema);
 

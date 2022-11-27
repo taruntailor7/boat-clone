@@ -13,7 +13,7 @@ const stoneSpeakersSchema = new mongoose.Schema({
   isSuperSaver: Boolean,
   image: Array,
   color: Array,
-});
+},{timestamp: true, versionKey: false});
 
 const stoneSpeakersModel = mongoose.model("stonespeakers", stoneSpeakersSchema);
 export default stoneSpeakersModel;

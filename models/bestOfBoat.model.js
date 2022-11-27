@@ -13,7 +13,7 @@ const bestOfBoatSchema = new mongoose.Schema({
   isSuperSaver: Boolean,
   image: Array,
   color: Array,
-});
+},{timestamp: true, versionKey: false});
 
 const bestOfBoatModel = mongoose.model("bestofboats", bestOfBoatSchema);
 

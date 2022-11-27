@@ -13,7 +13,7 @@ const allProductsSchema = new mongoose.Schema({
   isSuperSaver: Boolean,
   image: Array,
   color: Array,
-});
+},{timestamp: true, versionKey: false});
 
 const allProductsModel = mongoose.model("allproducts", allProductsSchema);
 export default allProductsModel;

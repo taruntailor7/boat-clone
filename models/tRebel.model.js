@@ -13,7 +13,7 @@ const tRebalSchema = new mongoose.Schema({
   isSuperSaver: Boolean,
   image: Array,
   color: Array,
-});
+},{timestamp: true, versionKey: false});
 
 const tRebelModel = mongoose.model("trebels", tRebalSchema);
 

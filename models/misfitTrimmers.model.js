@@ -13,7 +13,7 @@ const misfitTrimmersSchema = new mongoose.Schema({
   isSuperSaver: Boolean,
   image: Array,
   color: Array,
-});
+},{timestamp: true, versionKey: false});
 
 const misfitTrimmersModel = mongoose.model(
   "misfittrimmers",

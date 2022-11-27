@@ -13,7 +13,7 @@ const cartSchema = new mongoose.Schema({
     image: {type:Array},
     color: {type:Array},
     userId:{type:String,required:true},
-})
+},{timestamp: true, versionKey: false})
 
 const cartModel=mongoose.model('carts',cartSchema);
 export default cartModel

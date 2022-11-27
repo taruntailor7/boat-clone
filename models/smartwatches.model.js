@@ -13,7 +13,7 @@ const categorySchema = new mongoose.Schema({
   isSuperSaver: Boolean,
   image: Array,
   color: Array,
-});
+},{timestamp: true, versionKey: false});
 
 const smartWatchesModel = mongoose.model("smartwatches", categorySchema);
 
