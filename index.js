@@ -10,11 +10,7 @@ import { getRockerzWireless } from "./controllers/rockerzwireless.controller.js"
 import { getSmartWatches } from "./controllers/smartwatches.controller.js";
 import { getTRebels } from "./controllers/tRebels.controller.js";
 import { getMainProducts } from "./controllers/mainproducts.controller.js";
-import {
-  register,
-  login,
-  getLoggedInUser,
-} from "./controllers/user.controller.js";
+import { register,login,getLoggedInUser} from "./controllers/user.controller.js";
 import { getbestOfBoat } from "./controllers/bestOfBoat.controller.js";
 import { getmobileAccessories } from "./controllers/mobileAccessories.controller.js";
 import cartRouter from "./routes/cart.routes.js";

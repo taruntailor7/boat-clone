@@ -10,7 +10,7 @@
 
 # production
 /build
-
+/boat-fullstack
 # misc
 .DS_Store
 .env.local
