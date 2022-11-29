@@ -26,7 +26,7 @@ export const HomeCatchMeAll = () => {
 
     const getData = ()=>{
         dispatch(get_loading());  
-        fetch(`https://boat-lifestyle.onrender.com/catchMeAll`)
+        fetch(`https://boat-lifestyle.herokuapp.com/catchMeAll`)
         .then((res)=>res.json())
         .then((res)=>{
           setBestOfBoat(res)

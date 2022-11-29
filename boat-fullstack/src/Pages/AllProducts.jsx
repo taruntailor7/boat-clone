@@ -37,7 +37,7 @@ export const AllProducts = () => {
 
     const getData = ({_sort, _order, price_gte, price_lte  }) => {
         dispatch(get_loading());
-        Axios.get(`https://boat-lifestyle.onrender.com/mainProducts`, {
+        Axios.get(`https://boat-lifestyle.herokuapp.com/mainProducts`, {
             params: { _sort, _order, price_gte, price_lte}
         })
         .then((res) =>{
